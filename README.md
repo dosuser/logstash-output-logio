@@ -11,19 +11,19 @@ output {
 }
 
 # example
-input {
-        file {
-                path => "/home1/irteam/logs/service/async.log"
-        }
-        file {
-                path => "/home1/irteam/logs/service/news.log"
-        }
-}
-
-output {
-        logio {
-                host => "www.google.com"
-                port => 28777
-        }
-        stdout { }
-}
+	input {
+		file {
+			path => "/home1/irteam/logs/service/async.log"
+		}
+		file {
+			path => "/home1/irteam/logs/service/news.log"
+		}
+	}
+	
+	output {
+		logio {
+			host => "www.google.com"
+			port => 28777
+		}
+	stdout { }
+	}
